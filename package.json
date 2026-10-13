@@ -1,0 +1,28 @@
+{
+  "name": "tile-toy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:browser": "node tests/browser-check.mjs",
+    "test:editor": "node tests/editor-browser-check.mjs",
+    "test:stamps": "node tests/stamps-browser-check.mjs",
+    "test:persistence": "node tests/persistence-browser-check.mjs",
+    "test:toolbar": "node tests/toolbar-browser-check.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "playwright": "^1.64.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^4.0.0"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  }
+}
